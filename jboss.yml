@@ -1,7 +1,7 @@
 ---
            
 - name: Prepare Linux Machine with pre-requisites
-  hosts: local
+  hosts: localhost
   
   become: true
   any_errors_fatal: True
@@ -15,7 +15,7 @@
     - full_deployment
     
 - name: Install JBOSS
-  hosts: local 
+  hosts: localhost 
   
   become: true
   any_errors_fatal: True
@@ -28,7 +28,7 @@
     - full_deployment
 
 - name: Deploy jboss app
-  hosts: local
+  hosts: localhost
   
   become: true
   any_errors_fatal: True
